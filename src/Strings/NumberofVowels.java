@@ -1,6 +1,7 @@
 package Strings;
-
+import java.util.*;
 public class NumberofVowels {
+    Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         String word = "ankit singh";
         int n = word.length();
