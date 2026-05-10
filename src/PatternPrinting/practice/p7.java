@@ -1,4 +1,4 @@
-package practice;
+package PatternPrinting.practice;
 import java.util.*;
 
 public class p7 {

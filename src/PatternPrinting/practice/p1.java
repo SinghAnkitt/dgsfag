@@ -1,4 +1,4 @@
-package practice;
+package PatternPrinting.practice;
 
 public class p1 {
     public static void main(String[] args) {

@@ -1,14 +1,13 @@
-package practice;
+package PatternPrinting.practice;
 import java.util.*;
 
-public class p3 {
+public class p12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int m = n + 64;
-        for(int i = 65; i <= m; i++){
-            for(int j = 65; j <= m; j++){
-                System.out.print((char)j +" ");
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print((2*j)-1+" ");
             }
             System.out.println();
         }
