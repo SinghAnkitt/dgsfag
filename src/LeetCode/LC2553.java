@@ -19,7 +19,6 @@ public class LC2553 {
             }
         }
         int[] answer = new int[list.size()];
-
         for (int i = 0; i < list.size(); i++) {
             answer[i] = list.get(i);
         }
