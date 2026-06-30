@@ -10,14 +10,14 @@ public class p2 {
                 {5,5,4,1,4},
                 {3,1,8,2,6}
         };
-        int rowMin = Integer.MAX_VALUE;
-        for(int i = 0; i < arr.length; i++){
-            int rowMax = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int i= 0; i < arr.length; i++){
+            int max = Integer.MIN_VALUE;
             for(int j = 0; j < arr[0].length; j++){
-                rowMax = Math.max(rowMax, arr[i][j]);
+                max = Math.max(arr[i][j], max);
             }
-        rowMin = Math.min(rowMin, rowMax);
+            min = Math.min(max, min);
         }
-        System.out.println(rowMin);
+        System.out.println("Required value : " + min);
     }
 }
