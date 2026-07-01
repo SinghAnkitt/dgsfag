@@ -9,9 +9,12 @@ public class Transpose {
                 {5, 5, 4, 1},
                 {3, 1, 8, 2}
         };
-        for(int i = 0; i < arr[0].length; i++){
-            for(int j = 0; j < arr.length; j++){
-                System.out.print(arr[j][i] +" ");
+        for(int i = 0; i < arr.length; i++){
+            for(int j = 0; j < arr[0].length; j++){
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+                System.out.print(arr[i][j] +" ");
             }
             System.out.println();
         }
