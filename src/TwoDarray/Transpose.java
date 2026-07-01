@@ -17,8 +17,10 @@ public class Transpose {
                 {5, 5, 4, 1},
                 {3, 1, 8, 2}
         };
+        System.out.println("Given array is : ");
         print(arr);
         System.out.println();
+        System.out.println("Transpose of the matrix : ");
         for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < i; j++){
                 int temp = arr[i][j];
