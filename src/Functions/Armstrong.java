@@ -5,8 +5,10 @@ public class Armstrong {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        boolean check = isArmstrong(n);
-        System.out.println(check);
+
+        for(int i = 100; i < 1000; i++){
+            if(isArmstrong(i)) System.out.println(i + " ");
+        }
     }
     static boolean isArmstrong(int n){
         int num = n;
